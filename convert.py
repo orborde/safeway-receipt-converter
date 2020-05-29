@@ -42,8 +42,8 @@ with open(inp, 'r') as i:
         try:
             parse = parseprice(line)
         except ParseFailure as e:
-            print(repr(line), file=sys.stderr)
-            print(e, file=sys.stderr)
+            #print(repr(line), file=sys.stderr)
+            #print(e, file=sys.stderr)
             itembuf.append(line)
             continue
 
