@@ -44,7 +44,7 @@ with open(inp, 'r') as i:
         except ParseFailure as e:
             #print(repr(line), file=sys.stderr)
             #print(e, file=sys.stderr)
-            itembuf.append(line)
+            itembuf.append(line.strip())
             continue
 
         clubcode, item, pricegroup, endcode = parse
